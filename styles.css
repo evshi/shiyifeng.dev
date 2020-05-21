@@ -1,0 +1,11 @@
+body {
+    font-size: 72px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
