@@ -1,6 +1,8 @@
 body {
     font-size: 72px;
+    font-family: 'Raleway';
     text-align: center;
+    background: black;
 }
 
 .content {
@@ -8,4 +10,5 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
+    color: white;
 }
