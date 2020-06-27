@@ -12,8 +12,12 @@
 }
 
 .subtitle {
-  font-size: 18px;
   color: grey;
+  font-size: 18px;
+}
+
+.subtitle ~ .subtitle {
+  font-size: inherit;
 }
 
 a {
@@ -26,7 +30,7 @@ a:visited {
 }
 
 a:hover {
-  color: crimson;
+  color: coral;
 }
 
 body {

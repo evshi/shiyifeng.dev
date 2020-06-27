@@ -4,6 +4,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   margin: auto;
   font-size: 14px;
+  height: 100vh;
 }
 
 a {
@@ -36,12 +37,30 @@ a {
   margin: 0 20px;
 }
 
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 16px;
+}
+
+.skills > li {
+  white-space: nowrap;
+  margin: 0 12px;
+}
+
 @media print {
   body {
     font-size: 10px;
+    height: unset;
   }
 
   .experience {
     margin-right: 0;
+    text-align: justify;
+  }
+
+  .skills {
+    font-size: 12px;
   }
 }
