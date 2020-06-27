@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Raleway';
+  max-width: 1200px;
+  margin: auto;
+  font-size: 14px;
+}
+
+.contact {
+  text-align: center;
+  overflow-wrap: anywhere;
+  flex: 1;
+  min-width: 20%;
+}
+
+.experience {
+  flex: 3;
+  min-width: 400px;
+  margin: 0 20px;
+}
+
+@media print {
+  body {
+    font-size: 10px;
+  }
+
+  .experience {
+    margin-right: 0;
+  }
+}
