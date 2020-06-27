@@ -13,11 +13,12 @@
 
 .subtitle {
   font-size: 18px;
+  color: grey;
 }
 
 a {
   text-decoration: none;
-  color: grey;
+  color: white;
 }
 
 a:visited {
