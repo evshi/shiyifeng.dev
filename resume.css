@@ -1,10 +1,14 @@
 body {
   display: flex;
   flex-wrap: wrap;
-  font-family: 'Raleway';
+  font-family: 'Open Sans', sans-serif;
   max-width: 1200px;
   margin: auto;
   font-size: 14px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .contact {
@@ -12,6 +16,9 @@ body {
   overflow-wrap: anywhere;
   flex: 1;
   min-width: 20%;
+  background: crimson;
+  color:white;
+  padding: 0 10px;
 }
 
 .experience {
