@@ -1,10 +1,10 @@
 body {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   font-family: 'Open Sans', sans-serif;
   margin: auto;
   font-size: 14px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 a {
@@ -33,7 +33,6 @@ a {
 
 .experience {
   flex: 3;
-  min-width: 400px;
   margin: 0 20px;
 }
 
@@ -49,10 +48,17 @@ a {
   margin: 0 12px;
 }
 
+@media only screen and (min-width: 720px) and (min-aspect-ratio: 3/4) {
+  body {
+    flex-direction: row;
+  }
+}
+
 @media print {
   body {
     font-size: 10px;
     height: unset;
+    flex-direction: row;
   }
 
   .experience {
