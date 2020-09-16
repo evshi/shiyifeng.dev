@@ -56,7 +56,7 @@ a {
 
 @media print {
   body {
-    font-size: 10px;
+    font-size: 12px;
     height: unset;
     flex-direction: row;
   }
