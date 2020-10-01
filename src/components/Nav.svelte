@@ -6,8 +6,15 @@
 	nav {
 		border-bottom: 1px solid rgba(255,62,0,0.1);
 		font-weight: 300;
-		padding: 0 1em;
-	}
+    padding: 0 1em;
+    margin-bottom: 1em;
+  }
+  
+  @media print {
+    nav {
+      display: none;
+    }
+  }
 
 	ul {
 		margin: 0;

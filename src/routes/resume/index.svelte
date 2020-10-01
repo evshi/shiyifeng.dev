@@ -1,24 +1,33 @@
 <script lang="ts">
-  import ContactCard from '../../components/resume/ContactCard.svelte'
-  import Role from '../../components/resume/Role.svelte'
-  import Skills from '../../components/resume/Skills.svelte'
+  import ContactCard from "../../components/resume/ContactCard.svelte";
+  import Role from "../../components/resume/Role.svelte";
+  import Skills from "../../components/resume/Skills.svelte";
 
-  import { contact, honors, history, skills } from './_info'
+  import { contact, honors, history, skills } from "./_info";
 </script>
 
-<main>
-	<section>
-    <ContactCard {...contact}>
-      <img alt="headshot" slot="picture" src="profile.png"/>
+<style>
+  article {
+    display: flex;
+  }
+
+  @media only screen and (max-width: 720px) and (max-aspect-ratio: 3/4) {
+    article {
+      flex-direction: column;
+      padding: 2em;
+    }
+  }
+</style>
+
+<article>
+  <section class="contact">
+    <ContactCard {...contact} {honors}>
+      <img alt="headshot" slot="picture" src="profile.png" />
     </ContactCard>
-    <ul>
-    {#each honors as honor}
-      <li>{honor}</li>
-    {/each}
-    </ul>
   </section>
   <section>
-    {#each history as company }
+    <h1>Experience</h1>
+    {#each history as company}
       <div>
         <h1>{company.name}</h1>
         {#each company.roles as role}
@@ -26,6 +35,6 @@
         {/each}
       </div>
     {/each}
-    <Skills skills={skills} />
+    <Skills {skills} />
   </section>
-</main>
+</article>

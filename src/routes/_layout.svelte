@@ -4,6 +4,9 @@
 	export let segment: string;
 </script>
 
+<style>
+</style>
+
 <Nav {segment}/>
 
 <slot></slot>

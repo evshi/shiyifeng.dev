@@ -34,3 +34,9 @@ code {
 		font-size: 16px;
 	}
 }
+
+@media print {
+  body {
+    font-size: 12px;
+  }
+}

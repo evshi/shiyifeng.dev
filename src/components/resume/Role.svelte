@@ -6,12 +6,24 @@
   export let achievements: string[];
 </script>
 
+<style>
+  hgroup {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  hgroup > * {
+    margin-right: 1em;
+    margin-bottom: 0;
+  }
+</style>
+
 <section>
   <hgroup>
-    <h1>{title}</h1>
-    <h2>{org}</h2>
-    <h3>{start}</h3>
-    <h3>{end}</h3>
+    <h2>{title}</h2>
+    <h3>{org}</h3>
+    <h3>{start.concat(end ? `-${end}` : '')}</h3>
   </hgroup>
   <ul>
     {#each achievements as item}
