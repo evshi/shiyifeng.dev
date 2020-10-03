@@ -10,7 +10,7 @@
   hgroup {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: baseline;
   }
 
   hgroup > * {

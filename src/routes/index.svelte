@@ -4,16 +4,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 80vh;
   }
 
   .title {
-    font-size: 72px;
+    font-size: 5em;
   }
 
   .subtitle {
-    color: grey;
-    font-size: 18px;
+    opacity: 80%;
+    font-size: 1.2em;
   }
 
   .subtitle ~ .subtitle {
@@ -22,22 +22,18 @@
 
   a {
     text-decoration: none;
-    color: white;
+    color: var(--highlight);
   }
 
   a:visited {
-    color: lightcoral;
+    color: var(--contour);
   }
 
   a:hover {
-    color: coral;
+    color: var(--accent);
   }
 
   main {
-		position: relative;
-		max-width: 56em;
-		background-color: white;
-		padding: 2em;
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
@@ -51,7 +47,7 @@
   <div class="content">
     <div class="title">Hi, I'm Evan</div>
     <div class="subtitle">
-      Want to work together? <a href="resume">See what I've done.</a>
+      Want to work together? <a href="experience">See what I've done.</a>
     </div>
     <div class="subtitle">
       Come back to see <a href="https://github.com/evshi">what I'm building next!</a>

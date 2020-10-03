@@ -1,13 +1,13 @@
 <script lang="ts">
+  import { theme } from './theme';
+
 	export let segment: string;
 </script>
 
 <style>
 	nav {
-		border-bottom: 1px solid rgba(255,62,0,0.1);
 		font-weight: 300;
     padding: 0 1em;
-    margin-bottom: 1em;
   }
   
   @media print {
@@ -43,7 +43,7 @@
 		content: '';
 		width: calc(100% - 1em);
 		height: 2px;
-		background-color: rgb(255,62,0);
+		background-color: var(--accent);
 		display: block;
 		bottom: -1px;
 	}
@@ -58,6 +58,6 @@
 <nav>
 	<ul>
 		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">home</a></li>
-		<li><a aria-current="{segment === 'resume' ? 'page' : undefined}" href="resume">resume</a></li>
+		<li><a aria-current="{segment === 'experience' ? 'page' : undefined}" href="experience">experience</a></li>
 	</ul>
 </nav>

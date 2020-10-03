@@ -11,10 +11,13 @@
     display: flex;
   }
 
+  .experience {
+    padding: 1em;
+  }
+
   @media only screen and (max-width: 720px) and (max-aspect-ratio: 3/4) {
     article {
       flex-direction: column;
-      padding: 2em;
     }
   }
 </style>
@@ -25,11 +28,10 @@
       <img alt="headshot" slot="picture" src="profile.png" />
     </ContactCard>
   </section>
-  <section>
+  <section class="experience">
     <h1>Experience</h1>
     {#each history as company}
       <div>
-        <h1>{company.name}</h1>
         {#each company.roles as role}
           <Role {...role} />
         {/each}
