@@ -1,7 +1,8 @@
 export const contact = {
   name: "Yifeng Evan Shi",
-  title: "Software Engineer",
-  location: "Los Angeles",
+  immigration: "U.S. Permanent Resident",
+  role: "Software Engineer",
+  location: "Los Angeles, Remote",
   education: {
     institution: "University of California, Los Angeles",
     degree: "Computer Science, B.S.",
@@ -22,7 +23,7 @@ export const history = [
     roles: [
       {
         title: "Principal Software Engineer",
-        org: "Workday Extend",
+        org: "Extend",
         start: "2019",
         end: "Current",
         achievements: [

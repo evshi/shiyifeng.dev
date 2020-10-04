@@ -1,5 +1,5 @@
 <style>
-  .content {
+  article {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,17 +7,12 @@
     height: 80vh;
   }
 
-  .title {
+  h1 {
     font-size: 5em;
   }
 
-  .subtitle {
+  h2, h3, h4 {
     opacity: 80%;
-    font-size: 1.2em;
-  }
-
-  .subtitle ~ .subtitle {
-    font-size: inherit;
   }
 
   a {
@@ -32,25 +27,17 @@
   a:hover {
     color: var(--accent);
   }
-
-  main {
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
 </style>
 
 <svelte:head>
   <title>Evan Shi • Engineer</title>
 </svelte:head>
 
-<main>
-  <div class="content">
-    <div class="title">Hi, I'm Evan</div>
-    <div class="subtitle">
-      Want to work together? <a href="experience">See what I've done.</a>
-    </div>
-    <div class="subtitle">
-      Come back to see <a href="https://github.com/evshi">what I'm building next!</a>
-    </div>
-  </div>
-</main>
+<article>
+  <h1>Hi, I'm Evan</h1>
+  <h2>I write code, design systems, and lead teams</h2>
+  <h3>Want to work together? <a href="experience">See what I've done.</a></h3>
+  <h4>
+    Come back to see <a href="https://github.com/evshi">what I'm building next!</a>
+  </h4>
+</article>

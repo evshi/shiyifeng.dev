@@ -7,13 +7,21 @@
 </script>
 
 <style>
+  section {
+    text-align: justify;
+  }
+
+  ul {
+    list-style-type: square;
+  }
+
   hgroup {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
   }
 
-  hgroup > * {
+  h2, h3 {
     margin-right: 1em;
     margin-bottom: 0;
   }

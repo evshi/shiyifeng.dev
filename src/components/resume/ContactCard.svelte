@@ -1,5 +1,7 @@
 <script lang="ts">
   export let name: string;
+  export let immigration: string;
+  export let role: string;
   export let location: string;
   export let email: string;
   export let phone: string;
@@ -9,7 +11,7 @@
 
 <style>
   figure > :global(img) {
-    border: 2px solid var(--highlight);
+    border: 2px solid white;
     border-radius: 100%;
     box-sizing: border-box;
     min-width: 5em;
@@ -17,9 +19,12 @@
   }
 
   article {
-    padding: 2em;
+    padding: 1em;
     text-align: center;
     background-color: var(--contour);
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 0.5em;
   }
 
   ul {
@@ -30,24 +35,40 @@
   h2 {
     margin-top: 1em;
   }
+
+  a {
+    text-decoration: none;
+  }
 </style>
 
 <article>
   <figure>
     <slot name="picture" />
   </figure>
-  <h1>{name}</h1>
-  {#if email}<a href="mailto:{email}">{email}</a>{/if}
-  {#if phone}<a href="tel:{phone}}">phone</a>{/if}
-  <address>{location}</address>
-  <h2>Education</h2>
-  <h3>{education.institution}</h3>
-  <h3>{education.degree}</h3>
-  <h3>{education.school}</h3>
-  <h2>Honors</h2>
-  <ul>
-  {#each honors as honor}
-    <li>{honor}</li>
-  {/each}
-  </ul>
+  <section>
+    <h1>{name}</h1>
+    <h2>{role}</h2>
+    <h3>{immigration}</h3>
+    {#if email}
+      <h3><a href="mailto:{email}">{email}</a></h3>
+    {/if}
+    {#if phone}
+      <h3><a href="tel:{phone}}">{phone}</a></h3>
+    {/if}
+    <address>{location}</address>
+  </section>
+  <section>
+    <h2>Education</h2>
+    <h3>{education.institution}</h3>
+    <h3>{education.degree}</h3>
+    <h3>{education.school}</h3>
+  </section>
+  <section>
+    <h2>Honors</h2>
+    <ul>
+      {#each honors as honor}
+        <li>{honor}</li>
+      {/each}
+    </ul>
+  </section>
 </article>

@@ -13,6 +13,12 @@
   main {
     padding: 2em;
   }
+
+  @media print {
+    main {
+      padding: 0;
+    }
+  }
 </style>
 
 <div
