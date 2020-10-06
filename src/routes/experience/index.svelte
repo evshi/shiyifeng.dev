@@ -13,7 +13,7 @@
   }
 
   .experience {
-    padding: 1em;
+    padding: 0 1em;
   }
 
   @media only screen and (min-width: 720px) and (min-aspect-ratio: 3/4) {
