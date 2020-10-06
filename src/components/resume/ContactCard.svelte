@@ -24,7 +24,7 @@
     background-color: var(--contour);
     height: 100%;
     box-sizing: border-box;
-    border-radius: 0.5em;
+    border-radius: 0.25em;
   }
 
   ul {
