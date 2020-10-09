@@ -38,6 +38,6 @@
 
 <article>
   <h1>Hi, I'm Evan</h1>
-  <h2>I write <a href="https://github.com/evshi">code</a>, <a href="https://twitter.com/BNB_WD/status/1047590776333635585">design</a> systems, and <a href="experience">lead</a> teams</h2>
+  <h2>I write <a href="https://github.com/evshi">code</a>, <a href="https://developer.workday.com/about">design</a> systems, and <a href="experience">lead</a> teams</h2>
   <h3>Want to work together? <a href="https://www.linkedin.com/in/evan-shi/">Contact me</a></h3>
 </article>
