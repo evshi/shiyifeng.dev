@@ -3,43 +3,11 @@
   export let immigration: string;
   export let role: string;
   export let location: string;
-  export let email: string;
-  export let phone: string;
+  export let email: string | undefined;
+  export let phone: string | undefined;
   export let education: { school: string; degree: string; institution: string };
   export let honors: string[];
 </script>
-
-<style>
-  figure > :global(img) {
-    border: 2px solid white;
-    border-radius: 100%;
-    box-sizing: border-box;
-    min-width: 5em;
-    max-width: 10em;
-  }
-
-  article {
-    padding: 1em;
-    text-align: center;
-    background-color: var(--contour);
-    height: 100%;
-    box-sizing: border-box;
-    border-radius: 0.25em;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  h2 {
-    margin-top: 1em;
-  }
-
-  a {
-    text-decoration: none;
-  }
-</style>
 
 <article>
   <figure>
@@ -72,3 +40,40 @@
     </ul>
   </section>
 </article>
+
+<style>
+  figure > :global(img) {
+    border: 2px solid white;
+    border-radius: 100%;
+    box-sizing: border-box;
+    min-width: 5em;
+    max-width: 10em;
+  }
+
+  article {
+    padding: 1em;
+    text-align: center;
+    background-color: var(--contour);
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 0.25em;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  h1 {
+    font-weight: 700;
+  }
+
+  h2 {
+    font-weight: 500;
+    margin-top: 1em;
+  }
+
+  a {
+    text-decoration: none;
+  }
+</style>
