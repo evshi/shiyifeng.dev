@@ -24,4 +24,20 @@ export const redBlue: Theme = {
   accent: "#E63946",
 }
 
-export const theme = writable(redBlue);
+export const horizon: Theme = {
+  text: "#2F2C40",
+  contour: "#7686A6",
+  background: "#E38C8A",
+  highlight: "#A66370",
+  accent: "#FFB7AD"
+}
+
+export const fuji: Theme = {
+  text: "#595EA0",
+  contour: "#9675AD",
+  background: "#B47AAF",
+  highlight: "#E18BAE",
+  accent: "#F0A7AB"
+}
+
+export const theme = writable(redBlack);
